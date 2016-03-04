@@ -1,0 +1,30 @@
+{
+    "name": "kjbenk/wp-rest-api-hello-world",
+    "type": "wordpress-plugin",
+    "description": "Manage your WordPress Site.",
+    "homepage": "http://wp-api.org/",
+    "license": "GPL2+",
+    "authors": [
+        {
+            "name": "Kyle Benk",
+            "homepage": "http://wp-api.org/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/kjbenk/wp-rest-api-hello-world/issues"
+    },
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "2.3.4",
+        "wp-coding-standards/wpcs": "0.6.0"
+    },
+    "extra": {
+        "installer-name": "json-rest-api-wprahw"
+    },
+    "scripts": {
+        "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs",
+        "post-update-cmd" : "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+    }
+}
