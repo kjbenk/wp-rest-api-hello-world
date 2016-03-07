@@ -13,7 +13,7 @@ You can perform PHPUnit tests on this plugin by simply going to the plugin direc
 
 ## PHP Validation
 
-You can run the default WordPress PHP validator script by performing these commands:
+You can run a WordPress PHP code standards validator script by performing these commands:
 
 1. `npm install`
 1. `composer install`
