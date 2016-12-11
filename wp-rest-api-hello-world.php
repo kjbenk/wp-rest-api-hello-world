@@ -8,7 +8,7 @@ Author: Kyle Benk
 Author URI: http://kylebenk.com
 */
 
-if ( ! class_exists( 'wprahw_add_endpoint' ) ) :
+if ( ! class_exists( 'WP_REST_WPRAHW_Controller' ) ) :
 
 	class WP_REST_WPRAHW_Controller extends WP_REST_Controller {
 
