@@ -32,7 +32,7 @@ if ( ! class_exists( 'WP_REST_WPRAHW_Controller' ) ) :
 		 * @param  array $data The data passed in the request
 		 * @return json	   The returned JSON
 		 */
-		public function hello_world($data) {
+		public function hello_world( $data ) {
 			return 'Hello World';
 		}
 
@@ -50,8 +50,6 @@ if ( ! function_exists( 'wprahw_add_endpoint' ) ) :
 	 * @link http://v2.wp-api.org/extending/adding/
 	 */
 	function wprahw_add_endpoint() {
-
-		// Taxonomies.
 		$wprahw = new WP_REST_WPRAHW_Controller;
 		$wprahw->register_routes();
 	}
